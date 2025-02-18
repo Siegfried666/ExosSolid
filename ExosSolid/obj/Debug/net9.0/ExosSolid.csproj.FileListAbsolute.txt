@@ -1,0 +1,14 @@
+D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\bin\Debug\net9.0\ExosSolid.exe
+D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\bin\Debug\net9.0\ExosSolid.deps.json
+D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\bin\Debug\net9.0\ExosSolid.runtimeconfig.json
+D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\bin\Debug\net9.0\ExosSolid.dll
+D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\bin\Debug\net9.0\ExosSolid.pdb
+D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\obj\Debug\net9.0\ExosSolid.GeneratedMSBuildEditorConfig.editorconfig
+D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\obj\Debug\net9.0\ExosSolid.AssemblyInfoInputs.cache
+D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\obj\Debug\net9.0\ExosSolid.AssemblyInfo.cs
+D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\obj\Debug\net9.0\ExosSolid.csproj.CoreCompileInputs.cache
+D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\obj\Debug\net9.0\ExosSolid.dll
+D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\obj\Debug\net9.0\refint\ExosSolid.dll
+D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\obj\Debug\net9.0\ExosSolid.pdb
+D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\obj\Debug\net9.0\ExosSolid.genruntimeconfig.cache
+D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\obj\Debug\net9.0\ref\ExosSolid.dll
