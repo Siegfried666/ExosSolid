@@ -12,3 +12,4 @@ D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\obj\Debug\net9.0\refint\ExosSolid.
 D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\obj\Debug\net9.0\ExosSolid.pdb
 D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\obj\Debug\net9.0\ExosSolid.genruntimeconfig.cache
 D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\obj\Debug\net9.0\ref\ExosSolid.dll
+D:\DEVELOPPEMENT\Dev 2025\ExosSolid\ExosSolid\obj\Debug\net9.0\ExosSolid.sourcelink.json
