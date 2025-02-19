@@ -23,24 +23,29 @@ OCP Open-Closed Principle: On doit pouvoir ajouter des fonctionnalités à un co
 //BAD: 
 EXOSSOLID.SOLID.O.BAD.Invoice invoiceBad2 = new EXOSSOLID.SOLID.O.BAD.Invoice();
 Console.WriteLine("Bad final Invoice result with 150: " + invoiceBad2.GetInvoiceDiscount(150, EXOSSOLID.SOLID.O.BAD.InvoiceType.FinalInvoice));
-Console.WriteLine("Bad proposed Invoice result with 200: " +invoiceBad2.GetInvoiceDiscount(200, EXOSSOLID.SOLID.O.BAD.InvoiceType.ProposedInvoice));
+Console.WriteLine("Bad proposed Invoice result with 200: " + invoiceBad2.GetInvoiceDiscount(200, EXOSSOLID.SOLID.O.BAD.InvoiceType.ProposedInvoice));
 
 //GOOD:
 EXOSSOLID.SOLID.O.GOOD.Invoice finalInvoice = new EXOSSOLID.SOLID.O.GOOD.FinalInvoice();
 Console.WriteLine("Good final Invoice result with 150: " + finalInvoice.GetInvoiceDiscount(150));
 
 EXOSSOLID.SOLID.O.GOOD.Invoice proposedInvoice = new EXOSSOLID.SOLID.O.GOOD.ProposedInvoice();
-Console.WriteLine("Good proposed Invoice result with 200: " +proposedInvoice.GetInvoiceDiscount(200));
+Console.WriteLine("Good proposed Invoice result with 200: " + proposedInvoice.GetInvoiceDiscount(200));
 
 /*
-LSP Liskov Substitution Principle:
+LSP Liskov Substitution Principle: On doit pouvoir substituer une superclasse par ses classes enfants sans affecter le comportement de la superclasse
 */
 
 //BAD: 
-
+EXOSSOLID.SOLID.L.BAD.Apple appleBad = new EXOSSOLID.SOLID.L.BAD.Orange();
+Console.WriteLine(appleBad.GetColor());
 
 //GOOD:
+EXOSSOLID.SOLID.L.GOOD.Fruit appleGood = new EXOSSOLID.SOLID.L.GOOD.Apple();
+Console.WriteLine(appleGood.GetColor());
 
+EXOSSOLID.SOLID.L.GOOD.Fruit orangeGood = new EXOSSOLID.SOLID.L.GOOD.Orange();
+Console.WriteLine(orangeGood.GetColor());
 /*
 ISP Interface Segregation Principle:
 */
