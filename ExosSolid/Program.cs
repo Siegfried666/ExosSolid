@@ -46,15 +46,31 @@ Console.WriteLine(appleGood.GetColor());
 
 EXOSSOLID.SOLID.L.GOOD.Fruit orangeGood = new EXOSSOLID.SOLID.L.GOOD.Orange();
 Console.WriteLine(orangeGood.GetColor());
+
 /*
-ISP Interface Segregation Principle:
+ISP Interface Segregation Principle: On ne doit pas forcer à implémenter des méthodes qui ne seront pas utilisées. Pour cela on doit subdiviser les interfaces avec trop de 
+méthodes en plus petites méthodes qu'on pourra implémenter séparémment.
 */
 
 //BAD: 
+EXOSSOLID.SOLID.I.BAD.HPLaserJetPrinter hPLaserJetPrinterBad = new EXOSSOLID.SOLID.I.BAD.HPLaserJetPrinter();
+hPLaserJetPrinterBad.Print("print content");
+hPLaserJetPrinterBad.Fax("fax content");
+hPLaserJetPrinterBad.PrintDuplex("printduplex content");
+hPLaserJetPrinterBad.Scan("scan content");
 
+EXOSSOLID.SOLID.I.BAD.LiquidInkjetPrinter liquidInkjetPrinterBad = new EXOSSOLID.SOLID.I.BAD.LiquidInkjetPrinter();
+liquidInkjetPrinterBad.Fax("fax content"); // NOK ! Unhandled exception. System.NotImplementedException: The method or operation is not implemented.
 
 //GOOD:
+EXOSSOLID.SOLID.I.GOOD.HPLaserJetPrinter hPLaserJetPrinterGood = new EXOSSOLID.SOLID.I.GOOD.HPLaserJetPrinter();
+hPLaserJetPrinterGood.Print("print content");
+hPLaserJetPrinterGood.Fax("fax content");
+hPLaserJetPrinterGood.PrintDuplex("printduplex content");
+hPLaserJetPrinterGood.Scan("scan content");
 
+EXOSSOLID.SOLID.I.GOOD.LiquidInkjetPrinter liquidInkjetPrinter = new EXOSSOLID.SOLID.I.GOOD.LiquidInkjetPrinter();
+liquidInkjetPrinter.Print("print content"); // OK ! Aucune autre méthode ne sera suggerée car les interfaces implémentées sont précisément celles dont a besoin l'objet !
 /*
 DIP Dependancy Injection Principle:
 */

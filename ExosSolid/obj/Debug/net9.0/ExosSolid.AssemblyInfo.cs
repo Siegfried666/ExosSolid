@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExosSolid")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be283234f5afae82882a3f056ab6f01d1eeaf3fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58344172754ab60e8ece773b9e4c49fea376abc7")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExosSolid")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExosSolid")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
