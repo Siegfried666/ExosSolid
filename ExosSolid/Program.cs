@@ -3,6 +3,8 @@ SRP Single Responsability Principle: une classe doit avoir une seule responsabil
 */
 
 //BAD: Dans le mauvais exemple, on doit modifier la classe complète Invoice si on choisi de modifier le logging par exemple
+using EXOSSOLID.SOLID.D.GOOD;
+
 var from = "frederic@gmail.com";
 var to = "romain@gmail.com";
 var subject = "envoi de mail";
@@ -60,7 +62,7 @@ hPLaserJetPrinterBad.PrintDuplex("printduplex content");
 hPLaserJetPrinterBad.Scan("scan content");
 
 EXOSSOLID.SOLID.I.BAD.LiquidInkjetPrinter liquidInkjetPrinterBad = new EXOSSOLID.SOLID.I.BAD.LiquidInkjetPrinter();
-liquidInkjetPrinterBad.Fax("fax content"); // NOK ! Unhandled exception. System.NotImplementedException: The method or operation is not implemented.
+//liquidInkjetPrinterBad.Fax("fax content"); // NOK ! Unhandled exception. System.NotImplementedException: The method or operation is not implemented.
 
 //GOOD:
 EXOSSOLID.SOLID.I.GOOD.HPLaserJetPrinter hPLaserJetPrinterGood = new EXOSSOLID.SOLID.I.GOOD.HPLaserJetPrinter();
@@ -72,10 +74,16 @@ hPLaserJetPrinterGood.Scan("scan content");
 EXOSSOLID.SOLID.I.GOOD.LiquidInkjetPrinter liquidInkjetPrinter = new EXOSSOLID.SOLID.I.GOOD.LiquidInkjetPrinter();
 liquidInkjetPrinter.Print("print content"); // OK ! Aucune autre méthode ne sera suggerée car les interfaces implémentées sont précisément celles dont a besoin l'objet !
 /*
-DIP Dependancy Injection Principle:
+DIP Dependancy Injection Principle: Peut importe l'objet passé en paramètre dans le constructeur (injection de dépendance), on doit passer une interface afin d'avoir la garantie
+que les méthodes appelées vont exister. On doit découpler les dépendances entre les objets. Les objets de haut niveau (ceux qui dépendent d'autres) doit dépendrent d'abstractions
+plutôt que d'objets concrets (bas niveau)
 */
 
 //BAD: 
+EXOSSOLID.SOLID.D.BAD.EmployeeBusinessLogic employeeBusinessLogicBad = new EXOSSOLID.SOLID.D.BAD.EmployeeBusinessLogic();
+employeeBusinessLogicBad.GetEmployeeDetails(1);
 
-
-//GOOD:
+//GOOD: 
+EmployeeBusinessLogic employeeBusinessLogicGood = new EmployeeBusinessLogic();
+Employee emp = employeeBusinessLogicGood.GetEmployeeDetails(1001);
+Console.WriteLine($"ID: {emp.ID}, Name: {emp.Name}, Department: {emp.Department}, Salary: {emp.Salary}");
